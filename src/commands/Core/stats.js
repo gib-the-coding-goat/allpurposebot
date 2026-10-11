@@ -24,6 +24,7 @@ export default {
         { name: "Users", value: `${totalMembers}`, inline: true },
         { name: "Node.js", value: `${nodeVersion}`, inline: true },
         { name: "Discord.js", value: `v${version}`, inline: true },
+        { name: "Larpyness", value: "999%", inline: true },
         {
           name: "Memory Usage",
           value: `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`,
