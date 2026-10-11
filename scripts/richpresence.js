@@ -15,7 +15,7 @@ client.once('ready', () => {
             state: 'In LARP Central',             // 3rd Line
             assets: {
                 largeImage: 'lclogo',         // Your asset key from Dev Portal
-                largeText: 'Larp Central Bot'
+                largeText: 'Larp Central Bot' // yayayayayayaya
             }
         }],
         status: 'online',
