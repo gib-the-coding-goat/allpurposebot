@@ -118,8 +118,8 @@ export async function createInitialHelpMenu(client) {
         .setStyle(ButtonStyle.Danger);
 
     const supportButton = new ButtonBuilder()
-        .setLabel("Support Server")
-        .setURL("https://discord.gg/QnWNz2dKCE")
+        .setLabel("LARP Central")
+        .setURL("https://discord.gg/pRbcJFsSYJ")
         .setStyle(ButtonStyle.Link);
 
     const selectRow = createSelectMenu(
