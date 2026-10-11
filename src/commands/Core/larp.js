@@ -48,7 +48,7 @@ export default {
 
         try {
             await InteractionHelper.safeEditReply(interaction, {
-                content: "Pinging...",
+                content: "I see, you want to larp.",
             });
 
             const startTime = interaction._commandStartTime || interaction.createdTimestamp;
@@ -57,9 +57,9 @@ export default {
             const apiLatency = Math.max(0, Math.round(interaction.client.ws.ping));
             logger.info(`execute - calculated latency: ${latency}ms, apiLatency: ${apiLatency}ms`);
 
-            const embed = createEmbed({ title: "Pong!", description: null }).addFields(
-                { name: "Bot Latency", value: `${latency}ms`, inline: true },
-                { name: "API Latency", value: `${apiLatency}ms`, inline: true },
+            const embed = createEmbed({ title: "LARP!", description: null }).addFields(
+                { name: "LARP Levels: ", value: `999%`, inline: true },
+                { name: "Server: ", value: `𝐋𝐀𝐑𝐏 𝐂𝐄𝐍𝐓𝐑𝐀𝐋`, inline: true },
             );
 
             await InteractionHelper.safeEditReply(interaction, {
@@ -70,7 +70,7 @@ export default {
             logger.error('Ping command error:', error);
             try {
                 return await InteractionHelper.safeReply(interaction, {
-                    embeds: [createEmbed({ title: 'System Error', description: 'Could not determine latency at this time.', color: 'error' })],
+                    embeds: [createEmbed({ title: 'System Error', description: 'Could not determine larpiness at this time.', color: 'error' })],
                     flags: MessageFlags.Ephemeral,
                 });
             } catch (replyError) {
